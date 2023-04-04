@@ -12,8 +12,8 @@ const Navigation = () => {
   ];
 
   
-
   return (
+    <Container>
     <Navbar variant={"static"} css={{
       "background":"white"
     }}>
@@ -40,8 +40,7 @@ const Navigation = () => {
           <Navbar.Link isActive href="#">
             Customers
           </Navbar.Link>
-          <Navbar.Link href="#">Pricing</Navbar.Link>
-          <Navbar.Link href="#">Company</Navbar.Link>
+          <Navbar.Link href="#">Pricing</Navbar.Link> 
         </Navbar.Content>
 
         <Navbar.Content>
@@ -77,6 +76,7 @@ const Navigation = () => {
           ))}
         </Navbar.Collapse>
       </Navbar>
+      </Container>
   )
 }
 
