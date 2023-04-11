@@ -8,7 +8,7 @@ const Footer = () => {
         "backgroundColor": "black",
         "height": "200px"
     }}>
-        <Text color="white" align="center"> FOOTER</Text>
+        <Text color="white" align="center"> All Rights to the Company</Text>
     </div>
   )
 }

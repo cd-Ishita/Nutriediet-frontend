@@ -6,8 +6,6 @@ const Contact = () => {
     <Container css={{
         "backgroundColor": "$gray400",
         "borderRadius": "10px",
-        "paddingTop": "10px",
-        "paddingBottom": "10px"
     }}>
         <Text size={30} align="center">Want to Hear More, Contact Us</Text>
         <Spacer y={2.5} />

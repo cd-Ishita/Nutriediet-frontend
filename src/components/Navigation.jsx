@@ -13,8 +13,8 @@ const Navigation = () => {
 
   
   return (
-    <Container>
-    <Navbar variant={"static"} css={{
+    // <Container>
+    <Navbar variant={""} css={{
       "background":"white"
     }}>
         <Navbar.Toggle showIn="xs"/>
@@ -76,7 +76,7 @@ const Navigation = () => {
           ))}
         </Navbar.Collapse>
       </Navbar>
-      </Container>
+      //</Container>
   )
 }
 

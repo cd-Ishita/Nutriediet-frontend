@@ -5,85 +5,71 @@ import { Card, Container, Grid, Text, User, Link } from '@nextui-org/react'
 
 const Review = () => {
   return (
-        <Container css={{
-            "marginBottom": "30px"
+        <div style={{
+            "maxWidth": "80%",
+            "margin": "20px 20px auto"
         }}>
-            <Text size={40} css={{
+            {/* <Text size={40} css={{
                 "textAlign": "center",
                 "margin": "20px"
             }}>
                 Reviews By Our Customers
             </Text>
 
-            <Grid.Container gap={2}>
-                <Grid xs={12} sm={4}>
-                    <Card css={{ p: "$6" }}>
-                        <Card.Header>
-                            Avatar
-                            <Grid.Container css={{ pl: "$6" }}>
-                            <Grid xs={12}>
-                                <Text h4 css={{ lineHeight: "$xs" }}>
-                                Rithik Marudappa
-                                </Text>
-                            </Grid>
-                            </Grid.Container>
-                        </Card.Header>
-                        <Card.Body css={{ py: "$2" }}>
-                            <Text>
+            
+            <Card css={{ p: "$6", m: "$5", maxW: "30%" }}>
+                <Card.Header>
+                    Avatar
+                </Card.Header>
+                <Card.Body css={{ py: "$2" }}>
+                    <Text>
                             Make beautiful websites regardless of your design experience.
-                            </Text>
-                        </Card.Body>
-                        <Card.Footer>
-                            <Text>Star Rating</Text>
-                        </Card.Footer>
-                    </Card>
-                </Grid>
-                <Grid xs={12} sm={4}>
-                    <Card css={{ p: "$6" }}>
-                        <Card.Header>
-                            Avatar
-                            <Grid.Container css={{ pl: "$6" }}>
-                            <Grid xs={12}>
-                                <Text h4 css={{ lineHeight: "$xs" }}>
-                                Rithik Marudappa
-                                </Text>
-                            </Grid>
-                            </Grid.Container>
-                        </Card.Header>
-                        <Card.Body css={{ py: "$2" }}>
-                            <Text>
+                    </Text>
+                </Card.Body>
+                <Card.Footer>
+                        <Text>Star Rating</Text>
+                </Card.Footer>
+            </Card>
+            <Card css={{ p: "$6", m: "$5", maxW: "30%", left :"50%" }}>
+                <Card.Header>
+                    Avatar
+                </Card.Header>
+                <Card.Body css={{ py: "$2" }}>
+                    <Text>
                             Make beautiful websites regardless of your design experience.
-                            </Text>
-                        </Card.Body>
-                        <Card.Footer>
-                            <Text>Star Rating</Text>
-                        </Card.Footer>
-                    </Card>
-                </Grid>
-                <Grid xs={12} sm={4}>
-                    <Card css={{ p: "$6" }}>
-                        <Card.Header>
-                            Avatar
-                            <Grid.Container css={{ pl: "$6" }}>
-                            <Grid xs={12}>
-                                <Text h4 css={{ lineHeight: "$xs" }}>
-                                Rithik Marudappa
-                                </Text>
-                            </Grid>
-                            </Grid.Container>
-                        </Card.Header>
-                        <Card.Body css={{ py: "$2" }}>
-                            <Text>
+                    </Text>
+                </Card.Body>
+                <Card.Footer>
+                        <Text>Star Rating</Text>
+                </Card.Footer>
+            </Card>
+            <Card css={{ p: "$6", m: "$5", maxW: "30%" }}>
+                <Card.Header>
+                    Avatar
+                </Card.Header>
+                <Card.Body css={{ py: "$2" }}>
+                    <Text>
                             Make beautiful websites regardless of your design experience.
-                            </Text>
-                        </Card.Body>
-                        <Card.Footer>
-                            <Text>Star Rating</Text>
-                        </Card.Footer>
-                    </Card>
-                </Grid>
-            </Grid.Container>
-        </Container>
+                    </Text>
+                </Card.Body>
+                <Card.Footer>
+                        <Text>Star Rating</Text>
+                </Card.Footer>
+            </Card>
+            <Card css={{ p: "$6", m: "$5", maxW: "30%", left :"50%" }}>
+                <Card.Header>
+                    Avatar
+                </Card.Header>
+                <Card.Body css={{ py: "$2" }}>
+                    <Text>
+                            Make beautiful websites regardless of your design experience.
+                    </Text>
+                </Card.Body>
+                <Card.Footer>
+                        <Text>Star Rating</Text>
+                </Card.Footer>
+            </Card> */}
+        </div>
   )
 }
 
