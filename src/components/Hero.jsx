@@ -1,6 +1,5 @@
 import React from 'react'
-
-import { Grid, Col, Text, Container, Card, Button} from '@nextui-org/react'
+import { Container, Row, Grid, Col, Text, Button} from '@nextui-org/react'
 
 import { useState, useEffect } from 'react';
 
@@ -42,14 +41,57 @@ const Hero = () => {
 
     }
 
-    // const handleOnClick = () => {
-    //     window.scrollTo({ top: 550, behavior: 'smooth' });
-    // }
-
     return (
-        <Container>
+            <Row css={{
+                "height": "350px",
+                "display":"flex",
+                "flexDirection":"column",
+                "justifyContent":"center",
+                "alignItems":"center",
+                "backgroundImage":"url(https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?cs=srgb&dl=pexels-jane-doan-1132047.jpg&fm=jpg)",
+                "backgroundRepeat":"no-repeat",
+                "backgroundSize": "cover",
+                "&::before": {
+                    "content" : "",
+                    "position": "absolute",
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px",
+                    "backgroundColor": "rgba(0, 0, 0, 0.3)",
+                }
+            }}>
+                <Row css={{
+                    "display":"flex",
+                    "flexDirection":"column",
+                    "alignItems":"center",
+                    "justifyContent":"center"
+                }}>
+                    <Text color="white" weight={"bold"} size={50} css={{"textAlign": "center"}}>
+                        {text}
+                    </Text>
+                    <Text color="white" weight={"normal"} size={20}>Rediscover Yourself</Text>
+                    <Button size="sm" shadow color="warning" css={{
+                        "width": "20%",
+                        "justifyContent": "center",
+                        "marginTop": "20px"
+                    }}>
+                        Join Now!
+                    </Button>
+                </Row>
+                
+                
+            </Row>
+    )
+}
+
+export default Hero
+
+
+{/* <Container>
              <Grid.Container justify='center' css={{
                 "height": "700px",
+                "width": "100%",
                 "backgroundImage":"url(https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?cs=srgb&dl=pexels-jane-doan-1132047.jpg&fm=jpg)",
                 "backgroundRepeat":"no-repeat",
                 "backgroundSize": "cover",
@@ -78,10 +120,5 @@ const Hero = () => {
                     </Col>
                 </Grid>
             </Grid.Container>
-        </Container> 
-       
-    )
-}
-
-export default Hero
+        </Container>  */}
 

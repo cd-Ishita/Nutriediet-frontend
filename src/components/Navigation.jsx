@@ -1,33 +1,25 @@
 import React from 'react'
-import { Navbar, Button, Link, Text, Container } from '@nextui-org/react'
+import { Navbar, Button, Link, Text, Container, Row } from '@nextui-org/react'
+
+// Static Imports
+import logo from "../assets/logon2.png"
 
 const Navigation = () => {
 
   const collapseItems = [
     "Features",
-    "Customers",
-    "Pricing",
-    "Company",
-    "Login"
+    "About",
+    "Reviews",
+    "Sign Up /Login"
   ];
 
-  
   return (
-    <Container>
-      <Navbar variant={""} css={{
+      <Navbar css={{
         "background":"white"
       }}>
         <Navbar.Toggle showIn="xs"/>
-        <Navbar.Brand
-          css={{
-            "@xs": {
-              w: "12%",
-            },
-          }}
-        >
-          <Text b color="inherit" hideIn="xs">
-            NUtriDiet
-          </Text>
+        <Navbar.Brand>
+          <img src={logo} width="180px" height="180px" alt="Nutridiet"/>
         </Navbar.Brand>
 
         <Navbar.Content
@@ -36,21 +28,15 @@ const Navigation = () => {
           hideIn="xs"
           variant="highlight"
         >
-          <Navbar.Link href="#">Features</Navbar.Link>
-          <Navbar.Link isActive href="#">
-            Customers
-          </Navbar.Link>
-          <Navbar.Link href="#">Pricing</Navbar.Link> 
+          <Navbar.Link href="#">About Us</Navbar.Link>
+          <Navbar.Link isActive href="#"> Customers </Navbar.Link>
+          <Navbar.Link href="#">Review</Navbar.Link> 
         </Navbar.Content>
 
         <Navbar.Content>
-          <Navbar.Link color="inherit" href="#">
-            Login
-          </Navbar.Link>
-          <Navbar.Item>
-            <Button auto flat color="warning" as={Link} href="#">
-              Sign Up
-            </Button>
+          <Navbar.Link color="inherit" href="#" hideIn="xs"> Login </Navbar.Link>
+          <Navbar.Item hideIn="xs">
+            <Button auto flat color="warning" as={Link} href="#"> Sign Up </Button>
           </Navbar.Item>
         </Navbar.Content>
         <Navbar.Collapse disableAnimation>
@@ -76,7 +62,6 @@ const Navigation = () => {
           ))}
         </Navbar.Collapse>
       </Navbar>
-    </Container>
   )
 }
 

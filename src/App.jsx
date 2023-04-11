@@ -10,14 +10,18 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Services from './components/Services';
 import About from './components/About';
+import AboutM from './components/AboutM';
+import ServicesM from './components/ServicesM';
 
 const App = () => {
   return (
     <NextUIProvider>
           <Navigation />
           <Hero />
-          <About/>
+          <AboutM/>
+          <ServicesM/>
           <Spacer y={2.5} />
+          <About/>
           <Services/>
           <Spacer y={2.5} />
           <Contact/>

@@ -11,9 +11,19 @@ const About = () => {
                 "display": "flex",
                 "alignItems":"center",
                 "justifyContent":"center",
-                "height": "300px",
+                "height": "500px",
                 "width": "100%",
-                "backgroundImage": "url(https://cms-b-assets.familysearch.org/dims4/default/4bcee33/2147483647/strip/true/crop/800x420+0+40/resize/1200x630!/quality/90/?url=https%3A%2F%2Ffamilysearch-brightspot.s3.amazonaws.com%2Fae%2Fa4%2Fc115b544646d3a16c57880a572ba%2Ffamily-portrait-no-smile.jpg)"
+                "backgroundImage": "url(https://nutriediet.com/uploads/aw-1.jpeg)",
+                "backgroundPosition": "70% 50%",
+                "backgroundSize": "cover",
+                "&::before": {
+                    "content" : "",
+                    "position": "absolute",
+                    "top": "0px",
+                    "right": "0px",
+                    "bottom": "0px",
+                    "left": "0px",
+                }
             }}>
                 <Row css={{
                     "display": "flex",
@@ -29,8 +39,8 @@ const About = () => {
                         "justifyContent": "center",
                         "alignItems": "center"
                     }}>
-                        <Text size={30} color="white">
-                            About Us
+                        <Text size={30} color="black">
+                            Meet Ankita Gupta
                         </Text>
                     </div>
                     <div style={{
