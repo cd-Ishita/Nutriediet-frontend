@@ -42,12 +42,12 @@ const Hero = () => {
 
     }
 
-    const handleOnClick = () => {
-        window.scrollTo({ top: 550, behavior: 'smooth' });
-    }
+    // const handleOnClick = () => {
+    //     window.scrollTo({ top: 550, behavior: 'smooth' });
+    // }
 
     return (
-        // <Container>
+        <Container>
              <Grid.Container justify='center' css={{
                 "height": "700px",
                 "backgroundImage":"url(https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?cs=srgb&dl=pexels-jane-doan-1132047.jpg&fm=jpg)",
@@ -78,7 +78,7 @@ const Hero = () => {
                     </Col>
                 </Grid>
             </Grid.Container>
-        //</Container> */
+        </Container> 
        
     )
 }

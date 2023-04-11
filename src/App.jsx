@@ -17,7 +17,6 @@ const App = () => {
           <Navigation />
           <Hero />
           <About/>
-          <Review/>
           <Spacer y={2.5} />
           <Services/>
           <Spacer y={2.5} />

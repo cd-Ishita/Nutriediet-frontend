@@ -13,10 +13,10 @@ const Navigation = () => {
 
   
   return (
-    // <Container>
-    <Navbar variant={""} css={{
-      "background":"white"
-    }}>
+    <Container>
+      <Navbar variant={""} css={{
+        "background":"white"
+      }}>
         <Navbar.Toggle showIn="xs"/>
         <Navbar.Brand
           css={{
@@ -76,7 +76,7 @@ const Navigation = () => {
           ))}
         </Navbar.Collapse>
       </Navbar>
-      //</Container>
+    </Container>
   )
 }
 
