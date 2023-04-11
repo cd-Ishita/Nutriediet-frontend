@@ -43,7 +43,7 @@ const Hero = () => {
 
     return (
             <Row css={{
-                "height": "350px",
+                "height": "450px",
                 "display":"flex",
                 "flexDirection":"column",
                 "justifyContent":"center",
@@ -70,7 +70,7 @@ const Hero = () => {
                     <Text color="white" weight={"bold"} size={50} css={{"textAlign": "center"}}>
                         {text}
                     </Text>
-                    <Text color="white" weight={"normal"} size={20}>Rediscover Yourself</Text>
+                    <Text color="white" weight={"normal"} size={20}>NutrieDiet, Rediscover Yourself</Text>
                     <Button size="sm" shadow color="warning" css={{
                         "width": "20%",
                         "justifyContent": "center",

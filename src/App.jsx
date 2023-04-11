@@ -19,6 +19,7 @@ const App = () => {
           <Navigation />
           <Hero />
           <AboutM/>
+          <Spacer y={2.5} />
           <ServicesM/>
           <Spacer y={2.5} />
           <About/>

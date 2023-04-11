@@ -5,14 +5,22 @@ import { Container, Row, Col, Text } from '@nextui-org/react'
 const AboutM = () => {
   return (
     <Container>
-        <Row>   
-            <div>
+        <Row css={{
+            "display":"flex",
+            "alignItems":"center",
+            "justifyContent":"center",
+            "padding":"30px"
+        }}>   
+            <div style={{
+                "position":"relative",
+                "right" : "20%"
+            }}>
                 <Text weight={"medium"} size={40}>Our Process</Text>
                 <Text size={25}>Simple and healthy diets, no medication - no side-effects</Text>
             </div>
-        </Row>
-        <Row>
-            <div>
+            <div style={{
+                "position":"relative"
+            }}>
                 <Text size={18}>1-on-1 detailed consultation</Text>
                 <Text size={18}>Nutritional assessment</Text>
                 <Text size={18}>Blood report analysis</Text>
