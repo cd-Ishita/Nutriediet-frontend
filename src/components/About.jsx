@@ -4,6 +4,9 @@ const About = () => {
   return (
     <Container>
             <Row css={{
+                "marginTop": "10px",
+                "border":"10px solid white",
+                "borderRadius":"20px",
                 "position":"relative",
                 "display": "flex",
                 "alignItems":"center",
@@ -26,7 +29,7 @@ const About = () => {
                         "justifyContent": "center",
                         "alignItems": "center"
                     }}>
-                        <Text size={30}>
+                        <Text size={30} color="white">
                             About Us
                         </Text>
                     </div>
