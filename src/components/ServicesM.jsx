@@ -3,102 +3,104 @@ import { Grid, Card, Text } from '@nextui-org/react'
 const ServicesM = () => {
   return (
     <>
-        <Grid.Container gap={4} justify="center" css={{
-            "backgroundColor": "orange",
+        <Grid.Container gap={2} justify="center" css={{
+            "backgroundImage": "linear-gradient(0deg, rgba(122,88,0,1) 0%, rgba(158,93,2,1) 100%);",
+            "mt":"10px",
+            "mb":"10px"
         }}>
-            <Grid xs={2}>
+            <Grid justify="center" xs={2}>
                 <Card
                     isPressable
                     isHoverable
                     variant="bordered"
-                    css={{ mw: "250px" }}
+                    css={{ mw: "400px", "backgroundColor": "orange" }}
                     >
                     <Card.Body>
-                        <Text>Weight loss</Text>
+                        <Text b size={18} align="center">Weight loss</Text>
                     </Card.Body>
                 </Card>
             </Grid>
-            <Grid xs={2}>
+            <Grid justify="center" xs={2}>
                 <Card
                     isPressable
                     isHoverable
                     variant="bordered"
-                    css={{ mw: "400px" }}
+                    css={{ mw: "400px", "backgroundColor": "orange" }}
                     >
                     <Card.Body>
-                        <Text>Diabetes</Text>
+                        <Text b size={18} align="center">Diabetes</Text>
                     </Card.Body>
                 </Card>
             </Grid>
-            <Grid xs={2}>
+            <Grid justify="center" xs={2}>
                 <Card
                     isPressable
                     isHoverable
                     variant="bordered"
-                    css={{ mw: "400px" }}
+                    css={{ mw: "400px", "backgroundColor": "orange" }}
                     >
                     <Card.Body>
-                        <Text>Hypertension</Text>
+                        <Text b size={18} align="center">Hypertension</Text>
                     </Card.Body>
                 </Card>
             </Grid>
-            <Grid xs={2}>
+            <Grid justify="center" xs={2}>
                 <Card
                     isPressable
                     isHoverable
                     variant="bordered"
-                    css={{ mw: "400px" }}
+                    css={{ mw: "400px", "backgroundColor": "orange" }}
                     >
                     <Card.Body>
-                        <Text>PCOS</Text>
+                        <Text b size={18} align="center">PCOS</Text>
                     </Card.Body>
                 </Card>
             </Grid>
-            <Grid xs={2}>
+            <Grid justify="center" xs={2}>
                 <Card
                     isPressable
                     isHoverable
                     variant="bordered"
-                    css={{ mw: "400px" }}
+                    css={{ mw: "400px", "backgroundColor": "orange" }}
                     >
                     <Card.Body>
-                        <Text>Weight gain</Text>
+                        <Text b size={18} align="center">Weight gain</Text>
                     </Card.Body>
                 </Card>
             </Grid>
-            <Grid xs={3}>
+            <Grid justify="center" xs={3}>
                 <Card
                     isPressable
                     isHoverable
                     variant="bordered"
-                    css={{ mw: "400px" }}
+                    css={{ mw: "400px", "backgroundColor": "orange" }}
                     >
                     <Card.Body>
-                        <Text>Pediatric nutrition</Text>
+                        <Text b size={18} align="center">Pediatric nutrition</Text>
                     </Card.Body>
                 </Card>
             </Grid>
-            <Grid xs={3}>
+            <Grid justify="center" xs={3}>
                 <Card
                     isPressable
                     isHoverable
                     variant="bordered"
-                    css={{ mw: "400px" }}
+                    css={{ mw: "400px", "backgroundColor": "orange" }}
                     >
                     <Card.Body>
-                        <Text>Other issues</Text>
+                        <Text b size={18} align="center">Other issues</Text>
                     </Card.Body>
                 </Card>
             </Grid>
-            <Grid xs={3}>
+            <Grid justify="center" xs={3}>
                 <Card
                     isPressable
                     isHoverable
                     variant="bordered"
-                    css={{ mw: "400px" }}
+                    css={{ mw: "400px", "backgroundColor": "orange" }}
                     >
                     <Card.Body>
-                        <Text>Online consultation</Text>
+                        <Text b size={18} align="center">Online consultation</Text>
                     </Card.Body>
                 </Card>
             </Grid>

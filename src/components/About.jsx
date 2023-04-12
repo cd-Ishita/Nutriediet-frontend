@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Text } from '@nextui-org/react'
+import { Container, Row, Col, Text, Image} from '@nextui-org/react'
 const About = () => {
   return (
     <Container>
@@ -11,7 +11,7 @@ const About = () => {
                 "display": "flex",
                 "alignItems":"center",
                 "justifyContent":"center",
-                "height": "500px",
+                "height": "600px",
                 "width": "100%",
                 "backgroundImage": "url(https://nutriediet.com/uploads/aw-1.jpeg)",
                 "backgroundPosition": "70% 50%",
@@ -20,6 +20,7 @@ const About = () => {
                     "content" : "",
                     "position": "absolute",
                     "top": "0px",
+                    "backgroundColor": "rgba(0, 0, 0, 0.5)",
                     "right": "0px",
                     "bottom": "0px",
                     "left": "0px",
@@ -28,38 +29,22 @@ const About = () => {
                 <Row css={{
                     "display": "flex",
                     "alignItems":"center",
-                    "justifyContent":"center"
+                    "justifyContent":"space-around"
                 }}>
+                    <div>
+                        <img src="https://nutriediet.com/uploads/av-2.jpg" style={{
+                            "height":"300px",
+                            "width":"300px",
+                            "borderRadius":"500px",
+                            "border":"5px solid white"
+                        }}></img>
+                    </div> 
                     <div style={{
-                        "position":"absolute",
-                        "display":"flex",
-                        "left":"20%",
-                        "height":"200px",
-                        "width": "200px",
-                        "justifyContent": "center",
-                        "alignItems": "center"
+                        "width":"60%"
                     }}>
-                        <Text size={30} color="black">
-                            Meet Ankita Gupta
-                        </Text>
+                        <Text size={30} weight={"semibold"} color="white">Meet Ankita Gupta</Text>
+                        <Text size={18} weight={"normal"} color="white">Ankita Gupta is a renowned dietician in the Hyderabad and Telangana region with over 15 years of experience. She has a Masters degree in Food and Nutrition, and has won many awards and accolades. Testimonials from her thousands of happy clients is proof of her knowledge and dedication.</Text>
                     </div>
-                    <div style={{
-                        "position":"absolute",
-                        "right":"20%",
-                        "display":"flex",
-                        "height":"200px",
-                        "width": "200px",
-                        "background": "rgba(255, 255, 255, 1)",
-                        "boxShadow": "0px 0px 40px",
-                        "borderRadius":"100px",
-                        "justifyContent": "center",
-                        "alignItems": "center"
-                    }}>
-                        <Text css={{
-                            "color":"black",
-                        }}>Get it today!</Text>
-                    </div>
-                    
                 </Row>
             </Row>
     </Container>

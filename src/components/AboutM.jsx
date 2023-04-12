@@ -8,26 +8,40 @@ const AboutM = () => {
         <Row css={{
             "display":"flex",
             "alignItems":"center",
-            "justifyContent":"center",
-            "padding":"30px"
+            "justifyContent":"space-evenly",
+            "paddingTop": "60px",
+            "paddingBottom": "60px"
         }}>   
             <div style={{
                 "position":"relative",
-                "right" : "20%"
+                "marginRight":"30px"
             }}>
-                <Text weight={"medium"} size={40}>Our Process</Text>
-                <Text size={25}>Simple and healthy diets, no medication - no side-effects</Text>
+                <Text weight={"semibold"} size={40}>Our Process</Text>
+                <Text weight={"normal"} size={25}>Simple and healthy diets, no medication - no side-effects</Text>
             </div>
             <div style={{
-                "position":"relative"
+                "position":"relative",
+                "display":"flex",
+                "alignItems":"center",
+                "justifyContent":"center",
             }}>
-                <Text size={18}>1-on-1 detailed consultation</Text>
-                <Text size={18}>Nutritional assessment</Text>
-                <Text size={18}>Blood report analysis</Text>
-                <Text size={18}>Weekly diet plans</Text>
-                <Text size={18}>Tasty and healthy recipes</Text>
-                <Text size={18}>Focused exercise regimen</Text>
-                <Text size={18}>Weekly follow-up and quick support</Text>
+                <div style={{
+                    "height": "250px",
+                    "width":"2px",
+                    "backgroundColor":"black",
+                    "marginRight":"100px"
+                }}></div>
+                <div style={{
+                    "maxWidth":"auto"
+                }}>
+                    <Text size={22}>• 1-on-1 detailed consultation</Text>
+                    <Text size={22}>• Nutritional assessment</Text>
+                    <Text size={22}>• Blood report analysis</Text>
+                    <Text size={22}>• Weekly diet plans</Text>
+                    <Text size={22}>• Tasty and healthy recipes</Text>
+                    <Text size={22}>• Focused exercise regimen</Text>
+                    <Text size={22}>• Weekly follow-up and quick support</Text>
+                </div>
             </div>
         </Row>
     </Container>

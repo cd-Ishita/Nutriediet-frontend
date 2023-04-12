@@ -18,7 +18,7 @@ const Services = () => {
       }}>
         <div style={{
           "height": "192px",
-          "width": "10px",
+          "width": "2px",
           "backgroundColor": "black",
           "opacity":"70%",
           "marginRight":"28px",
@@ -58,7 +58,7 @@ const Services = () => {
         </Card> 
         <div style={{
           "height": "192px",
-          "width": "10px",
+          "width": "2px",
           "backgroundColor": "black",
           "opacity":"70%",
           "marginLeft":"28px",
@@ -72,7 +72,7 @@ const Services = () => {
       }}>
         <div style={{
           "height": "192px",
-          "width": "10px",
+          "width": "2px",
           "backgroundColor": "black",
           "opacity":"70%",
           "marginRight":"28px",
@@ -112,7 +112,7 @@ const Services = () => {
         </Card> 
         <div style={{
           "height": "192px",
-          "width": "10px",
+          "width": "2px",
           "backgroundColor": "black",
           "opacity":"70%",
           "marginLeft":"28px",
