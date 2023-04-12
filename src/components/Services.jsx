@@ -1,125 +1,112 @@
 import React from 'react'
-import Contact from './Contact'
-import { Container, Row, Col, Card, Text } from '@nextui-org/react'
-
+import { Grid, Card, Text } from '@nextui-org/react'
 const Services = () => {
   return (
-    <Container display="flex" direction="column" justify="center" alignContent="center">
-      <Text size={40} css={{
-                "textAlign": "center",
-                "margin": "20px"
-            }}>
-                Reviews By Our Customers
-      </Text>
-      <div style={{
-        "display":"flex",
-        "marginLeft":"25%",
-        "marginBottom":"20px"
-      }}>
-        <div style={{
-          "height": "192px",
-          "width": "2px",
-          "backgroundColor": "black",
-          "opacity":"70%",
-          "marginRight":"28px",
-          "boxShadow":"0px 0px 10px"
-        }}></div>
-          <Card css={{ p: "$6" }}>
-            <Card.Header>
-              Avatar
-            </Card.Header>
-            <Card.Body css={{ py: "$2" }}>
-              <Text>
-                Make beautiful websites regardless of your design experience.
-              </Text>
-            </Card.Body>
-            <Card.Footer>
-              <Text>Star Rating</Text>
-            </Card.Footer>
-          </Card> 
-      </div>
-      <div style={{
-        "display":"flex",
-        "marginRight":"25%",
-        "marginBottom":"20px"
-      }}>
-        <Card css={{ p: "$6" }}>
-            <Card.Header>
-              Avatar
-            </Card.Header>
-            <Card.Body css={{ py: "$2" }}>
-              <Text>
-                Make beautiful websites regardless of your design experience.
-              </Text>
-            </Card.Body>
-            <Card.Footer>
-              <Text>Star Rating</Text>
-            </Card.Footer>
-        </Card> 
-        <div style={{
-          "height": "192px",
-          "width": "2px",
-          "backgroundColor": "black",
-          "opacity":"70%",
-          "marginLeft":"28px",
-          "boxShadow":"0px 0px 10px"
-        }}></div>
-      </div>
-      <div style={{
-        "display":"flex",
-        "marginLeft":"25%",
-        "marginBottom":"20px"
-      }}>
-        <div style={{
-          "height": "192px",
-          "width": "2px",
-          "backgroundColor": "black",
-          "opacity":"70%",
-          "marginRight":"28px",
-          "boxShadow":"0px 0px 10px"
-        }}></div>
-          <Card css={{ p: "$6" }}>
-            <Card.Header>
-              Avatar
-            </Card.Header>
-            <Card.Body css={{ py: "$2" }}>
-              <Text>
-                Make beautiful websites regardless of your design experience.
-              </Text>
-            </Card.Body>
-            <Card.Footer>
-              <Text>Star Rating</Text>
-            </Card.Footer>
-          </Card> 
-      </div>
-      <div style={{
-        "display":"flex",
-        "marginRight":"25%",
-        "marginBottom":"20px"
-      }}>
-        <Card css={{ p: "$6" }}>
-            <Card.Header>
-              Avatar
-            </Card.Header>
-            <Card.Body css={{ py: "$2" }}>
-              <Text>
-                Make beautiful websites regardless of your design experience.
-              </Text>
-            </Card.Body>
-            <Card.Footer>
-              <Text>Star Rating</Text>
-            </Card.Footer>
-        </Card> 
-        <div style={{
-          "height": "192px",
-          "width": "2px",
-          "backgroundColor": "black",
-          "opacity":"70%",
-          "marginLeft":"28px",
-          "boxShadow":"0px 0px 10px"
-        }}></div>
-      </div>
-    </Container>
+    <>
+        <Grid.Container gap={2} justify="center" css={{
+            "backgroundImage": "linear-gradient(0deg, rgba(122,88,0,1) 0%, rgba(158,93,2,1) 100%);",
+            "mt":"10px",
+            "mb":"10px"
+        }}>
+            <Grid justify="center" xs={2}>
+                <Card
+                    isPressable
+                    isHoverable
+                    variant="bordered"
+                    css={{ mw: "400px", "backgroundColor": "orange" }}
+                    >
+                    <Card.Body>
+                        <Text b size={18} align="center">Weight loss</Text>
+                    </Card.Body>
+                </Card>
+            </Grid>
+            <Grid justify="center" xs={2}>
+                <Card
+                    isPressable
+                    isHoverable
+                    variant="bordered"
+                    css={{ mw: "400px", "backgroundColor": "orange" }}
+                    >
+                    <Card.Body>
+                        <Text b size={18} align="center">Diabetes</Text>
+                    </Card.Body>
+                </Card>
+            </Grid>
+            <Grid justify="center" xs={2}>
+                <Card
+                    isPressable
+                    isHoverable
+                    variant="bordered"
+                    css={{ mw: "400px", "backgroundColor": "orange" }}
+                    >
+                    <Card.Body>
+                        <Text b size={18} align="center">Hypertension</Text>
+                    </Card.Body>
+                </Card>
+            </Grid>
+            <Grid justify="center" xs={2}>
+                <Card
+                    isPressable
+                    isHoverable
+                    variant="bordered"
+                    css={{ mw: "400px", "backgroundColor": "orange" }}
+                    >
+                    <Card.Body>
+                        <Text b size={18} align="center">PCOS</Text>
+                    </Card.Body>
+                </Card>
+            </Grid>
+            <Grid justify="center" xs={2}>
+                <Card
+                    isPressable
+                    isHoverable
+                    variant="bordered"
+                    css={{ mw: "400px", "backgroundColor": "orange" }}
+                    >
+                    <Card.Body>
+                        <Text b size={18} align="center">Weight gain</Text>
+                    </Card.Body>
+                </Card>
+            </Grid>
+            <Grid justify="center" xs={3}>
+                <Card
+                    isPressable
+                    isHoverable
+                    variant="bordered"
+                    css={{ mw: "400px", "backgroundColor": "orange" }}
+                    >
+                    <Card.Body>
+                        <Text b size={18} align="center">Pediatric nutrition</Text>
+                    </Card.Body>
+                </Card>
+            </Grid>
+            <Grid justify="center" xs={3}>
+                <Card
+                    isPressable
+                    isHoverable
+                    variant="bordered"
+                    css={{ mw: "400px", "backgroundColor": "orange" }}
+                    >
+                    <Card.Body>
+                        <Text b size={18} align="center">Other issues</Text>
+                    </Card.Body>
+                </Card>
+            </Grid>
+            <Grid justify="center" xs={3}>
+                <Card
+                    isPressable
+                    isHoverable
+                    variant="bordered"
+                    css={{ mw: "400px", "backgroundColor": "orange" }}
+                    >
+                    <Card.Body>
+                        <Text b size={18} align="center">Online consultation</Text>
+                    </Card.Body>
+                </Card>
+            </Grid>
+        </Grid.Container>
+        
+    </>
   )
 }
 
