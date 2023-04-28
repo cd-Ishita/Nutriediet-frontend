@@ -55,9 +55,9 @@ const Footer = () => {
         }}>
         </div>
         <div>
-          <Text size={25} weight={"semibold"} color="white">Reach Out to us on: </Text>
-          <Text size={20} weight={"semibold"} color="white" css={{"display":"flex", "alignItems":"center", "gap":"5px"}}><FaFacebookSquare/>Facebook </Text>
-          <Text size={20} weight={"semibold"} color="white" css={{"display":"flex", "alignItems":"center", "gap":"5px"}}><FaWhatsappSquare/>WhatsApp</Text>
+          <Text size={25} weight={"semibold"} color="white">Reach Out To Us On : </Text>
+          <Link size={20} weight={"semibold"} color="white" css={{"display":"flex", "alignItems":"center", "gap":"5px"}}><FaFacebookSquare/>Facebook </Link>
+          <Link size={20} weight={"semibold"} color="white" css={{"display":"flex", "alignItems":"center", "gap":"5px"}}><FaWhatsappSquare/>WhatsApp</Link>
         </div>
       </Row>
       <Row css={{

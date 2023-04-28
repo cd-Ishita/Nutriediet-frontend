@@ -7,10 +7,26 @@ import logo from "../assets/logon2.png"
 const Navigation = () => {
 
   const collapseItems = [
-    "Features",
-    "About",
-    "Reviews",
-    "Sign Up /Login"
+    {
+      name: "Features",
+      link: "#"
+    },
+    {
+      name: "About",
+      link: "#"
+    },
+    {
+      name: "Reviews",
+      link: "#"
+    },
+    {
+      name: "Login",
+      link: "https://nutriediet.com/views/login.html"
+    },
+    {
+      name: "Sign Up",
+      link: "https://nutriediet.com/views/signup.html"
+    }
   ];
 
   return (
@@ -28,35 +44,35 @@ const Navigation = () => {
           hideIn="xs"
           variant="highlight"
         >
-          <Navbar.Link href="#">About Us</Navbar.Link>
-          <Navbar.Link isActive href="#"> Customers </Navbar.Link>
-          <Navbar.Link href="#">Review</Navbar.Link> 
+          <Navbar.Link css={{"textDecoration":"underline"}} href="#">About Us</Navbar.Link>
+          <Navbar.Link css={{"textDecoration":"underline"}} href="#"> Customers </Navbar.Link>
+          <Navbar.Link css={{"textDecoration":"underline"}} href="#">Review</Navbar.Link> 
         </Navbar.Content>
 
         <Navbar.Content>
-          <Navbar.Link color="inherit" href="#" hideIn="xs"> Login </Navbar.Link>
+          <Navbar.Link color="inherit" href="https://nutriediet.com/views/login.html" hideIn="xs"> Login </Navbar.Link>
           <Navbar.Item hideIn="xs">
-            <Button auto flat color="warning" as={Link} href="#"> Sign Up </Button>
+            <Button auto flat color="warning" as={Link} href="https://nutriediet.com/views/signup.html"> Sign Up </Button>
           </Navbar.Item>
         </Navbar.Content>
         <Navbar.Collapse disableAnimation>
-          {collapseItems.map((item, index) => (
+          {collapseItems.map((item, i) => (
             <Navbar.CollapseItem
-              key={item}
+              key={item.name}
               activeColor="warning"
               css={{
-                color: index === collapseItems.length - 1 ? "$error" : "",
+                color: i === collapseItems.length - 1 ? "$error" : "",
               }}
-              isActive={index === 2}
+              isActive={i === 2}
             >
               <Link
                 color="inherit"
                 css={{
                   minWidth: "100%",
                 }}
-                href="#"
+                href={item.link}
               >
-                {item}
+                {item.name}
               </Link>
             </Navbar.CollapseItem>
           ))}
