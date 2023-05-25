@@ -71,7 +71,7 @@ const Hero = () => {
                         {text}
                     </Text>
                     <Text color="white" weight={"normal"} size={20}>NutrieDiet, Rediscover Yourself</Text>
-                    <Button size="sm" shadow color="warning" css={{
+                    <Button href="https://nutriediet.com/views/login.html" size="sm" animated color="warning" css={{
                         "width": "20%",
                         "justifyContent": "center",
                         "marginTop": "20px"

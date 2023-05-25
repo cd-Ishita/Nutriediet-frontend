@@ -1,8 +1,76 @@
 import React from 'react'
 import { Container, Card, Text, Image } from '@nextui-org/react'
 
-import before from "../assets/before1.png";
-import after from "../assets/after1.png";
+import nishita_before from "../assets/Nishita_Before.png";
+import nishita_after from "../assets/Nishita_After.png";
+import ravi_before from "../assets/Ravi_before.png";
+import ravi_after from "../assets/Ravi_after.png";
+import sayantani_before from "../assets/Sayantani_before.png";
+import sayantani_after from "../assets/Sayantani_after.png";
+import sarita_before from "../assets/Sarita_before.png";
+import sarita_after from "../assets/Sarita_after.png";
+import bina_before from "../assets/Bina_before.png";
+import bina_after from "../assets/Bina_after.png";
+import priyanka_before from "../assets/Priyanaka_before.png"
+import priyanka_after from "../assets/Priyanaka_after.png";
+
+const user_data = [
+  {
+    "imageBefore": nishita_before,
+    "imageAfter": nishita_after,
+    "name": "Nishita Baderia",
+    "title": "Weight Loss Plan",
+    "before": "Before Weight - 70.7 kg",
+    "after": "After Weight - 60.3 kg"
+  },  
+
+  {
+    "imageBefore": ravi_before,
+    "imageAfter": ravi_after,
+    "name": "Ravi Mittal",
+    "title": "Weight Loss Plan",
+    "before": "Before Weight - 83 kg",
+    "after": "After Weight - 64 kg"
+  },
+
+  {
+    "imageBefore": sayantani_before,
+    "imageAfter": sayantani_after,
+    "name": "Sayantani Majumdar",
+    "title": "Diabetes Management and Weight Loss Plan",
+    "before": "Before Weight - 72 kg",
+    "after": "After Weight - 58 kg",
+    "extra": "HBA1c - 6.2 to 5 (normal values)"
+  },
+
+  {
+    "imageBefore": sarita_before,
+    "imageAfter": sarita_after,
+    "name": "Sarita Satapathy",
+    "title": "Weight Loss Plan",
+    "before": "Before Weight - 77 kg",
+    "after": "After Weight - 62 kg",
+  },
+
+  {
+    "imageBefore": bina_before,
+    "imageAfter": bina_after,
+    "name": "Bina Singh",
+    "title": "Weight Loss Plan",
+    "before": "Before Weight - 84 kg",
+    "after": "After Weight - 74 kg"
+  },
+
+  {
+    "imageBefore": priyanka_before,
+    "imageAfter": priyanka_after,
+    "name": "Priyanka Surampadi",
+    "title": "PCOD and Weight Loss Plan",
+    "before": "Before Weight - 78 kg",
+    "after": "After Weight - 62 kg"
+  }
+]
+
 
 const Progress = () => {
   return (
@@ -13,123 +81,44 @@ const Progress = () => {
             }}>
                 Customer Progress
       </Text>
-      <div style={{
-        "display":"flex",
-        "marginLeft":"25%",
-        "marginBottom":"20px"
-      }}>
-        <div style={{
-          "height": "192px",
-          "width": "2px",
-          "backgroundColor": "black",
-          "opacity":"70%",
-          "marginRight":"28px",
-          "boxShadow":"0px 0px 10px"
-        }}></div>
-          <Card css={{ p: "$6" }}>
+      {user_data.map((item, key) => {     
+        return ( <div style={{
+          "display":"flex",
+          "marginBottom":"20px"
+        }}>
+        
+          <Card css={{ p: "$6" }} variant="bordered">
             <Card.Header>
+              <Text size={27} css={{ "textAlign": "center", "margin": "2px"}}> {item.name} </Text>
             </Card.Header>
-            <Card.Body css={{ py: "$2", display:"flex", "flexDirection":"row" }}>
+            <Card.Body css={{ m:"$2", display:"flex", "flexDirection":"row" }}>
               <Image
-                src={before}
-                width={200}
-                height={200}
+                src={item.imageBefore}
+                width={400}
+                height={400}
               />
               <Image
-                src={after}
-                width={300}
-                height={300}
+                src={item.imageAfter}
+                width={400}
+                height={400}
               />
-
+          
             </Card.Body>
-            <Card.Footer>
-              <Text>Wow Wonderful fatloss</Text>
+            
+            <Card.Footer css={{ justifyContent:"center", textAlign:"center", margin:"20px" }}>
+              <Text>
+                <p><Text size={20} >{item.title}</Text></p>
+                <p><Text weight={'semibold'} size={20}>{item.before}</Text></p>
+                <p><Text weight={'semibold'} size={20}>{item.after}</Text></p>
+                <p><Text weight={'semibold'} size={20}>{item.extra}</Text></p>
+              </Text>
             </Card.Footer>
           </Card> 
-      </div>
-      <div style={{
-        "display":"flex",
-        "marginRight":"25%",
-        "marginBottom":"20px"
-      }}>
-        <Card css={{ p: "$6" }}>
-            <Card.Header>
-              Avatar
-            </Card.Header>
-            <Card.Body css={{ py: "$2" }}>
-              <Text>
-                Make beautiful websites regardless of your design experience.
-              </Text>
-            </Card.Body>
-            <Card.Footer>
-              <Text>Star Rating</Text>
-            </Card.Footer>
-        </Card> 
-        <div style={{
-          "height": "192px",
-          "width": "2px",
-          "backgroundColor": "black",
-          "opacity":"70%",
-          "marginLeft":"28px",
-          "boxShadow":"0px 0px 10px"
-        }}></div>
-      </div>
-      <div style={{
-        "display":"flex",
-        "marginLeft":"25%",
-        "marginBottom":"20px"
-      }}>
-        <div style={{
-          "height": "192px",
-          "width": "2px",
-          "backgroundColor": "black",
-          "opacity":"70%",
-          "marginRight":"28px",
-          "boxShadow":"0px 0px 10px"
-        }}></div>
-          <Card css={{ p: "$6" }}>
-            <Card.Header>
-              Avatar
-            </Card.Header>
-            <Card.Body css={{ py: "$2" }}>
-              <Text>
-                Make beautiful websites regardless of your design experience.
-              </Text>
-            </Card.Body>
-            <Card.Footer>
-              <Text>Star Rating</Text>
-            </Card.Footer>
-          </Card> 
-      </div>
-      <div style={{
-        "display":"flex",
-        "marginRight":"25%",
-        "marginBottom":"20px"
-      }}>
-        <Card css={{ p: "$6" }}>
-            <Card.Header>
-              Avatar
-            </Card.Header>
-            <Card.Body css={{ py: "$2" }}>
-              <Text>
-                Make beautiful websites regardless of your design experience.
-              </Text>
-            </Card.Body>
-            <Card.Footer>
-              <Text>Star Rating</Text>
-            </Card.Footer>
-        </Card> 
-        <div style={{
-          "height": "192px",
-          "width": "2px",
-          "backgroundColor": "black",
-          "opacity":"70%",
-          "marginLeft":"28px",
-          "boxShadow":"0px 0px 10px"
-        }}></div>
-      </div>
+        </div> )
+      })}
     </Container>
   )
 }
 
 export default Progress
+
