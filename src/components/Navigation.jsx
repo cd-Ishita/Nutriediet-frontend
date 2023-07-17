@@ -44,9 +44,9 @@ const Navigation = () => {
           hideIn="xs"
           variant="highlight"
         >
-          <Navbar.Link css={{"textDecoration":"underline"}} href="#">About Us</Navbar.Link>
-          <Navbar.Link css={{"textDecoration":"underline"}} href="#"> Customers </Navbar.Link>
-          <Navbar.Link css={{"textDecoration":"underline"}} href="#">Review</Navbar.Link> 
+          <Navbar.Link css={{"textDecoration":"underline"}} href="/">Home</Navbar.Link>
+          <Navbar.Link css={{"textDecoration":"underline"}} href="/progress"> Progress </Navbar.Link>
+          <Navbar.Link css={{"textDecoration":"underline"}} href="/review">Review</Navbar.Link> 
         </Navbar.Content>
 
         <Navbar.Content>
