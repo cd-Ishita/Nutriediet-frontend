@@ -21,11 +21,8 @@ const Home = () => {
           <Services/>
           <Spacer y={2.5} />
           <AboutM/>
-          <Progress/>
           <Spacer y={2.5} />
           <Contact/>
-          <Review/>
-          <Spacer y={2.5} />
           <Footer/>
     </NextUIProvider>
   );

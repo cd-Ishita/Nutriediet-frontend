@@ -1,10 +1,15 @@
 import React from 'react'
+import Footer from './components/Footer'
+import Reviews from './components/Review'
 
 
 const Review = () => {
   return (
-    <h1>review</h1>
-  )
+    <div>
+        <Reviews  />
+        <Footer />
+    </div>
+  );
 }
 
 export default Review

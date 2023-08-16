@@ -74,12 +74,13 @@ const user_data = [
 
 const Progress = () => {
   return (
-    <Container display="flex" direction="column" justify="center" alignContent="center">
-      <Text size={40} css={{
+    <Container fluid display="flex" direction="column" justify="center" alignContent="center" width="100%" css={{"background-image": "radial-gradient(circle, #c0de66 10%, #92de66 10%, white)", "width": "100%"}} >
+      <Text size={55} css={{
                 "textAlign": "center",
-                "margin": "20px"
+                "margin": "40px",
+                "fontFamily": "My Soul, cursive"
             }}>
-                Customer Progress
+                Transformation Stories
       </Text>
       {user_data.map((item, key) => {     
         return ( <div style={{
@@ -87,30 +88,36 @@ const Progress = () => {
           "marginBottom":"20px"
         }}>
         
-          <Card css={{ p: "$6" }} variant="bordered">
-            <Card.Header>
-              <Text size={27} css={{ "textAlign": "center", "margin": "2px"}}> {item.name} </Text>
+          <Card css={{ p: "$6" }} >
+            <Card.Header css={{justifyContent:"center"}}>
+              <Text h2 size={30}  css={{ "textAlign": "center", "margin": "2px", "fontFamily": "Palatino"}}> {item.name} </Text>
             </Card.Header>
             <Card.Body css={{ m:"$2", display:"flex", "flexDirection":"row" }}>
-              <Image
-                src={item.imageBefore}
-                width={400}
-                height={400}
-              />
-              <Image
-                src={item.imageAfter}
-                width={400}
-                height={400}
-              />
+              <div>
+                <Image
+                    src={item.imageBefore}
+                    width={400}
+                    height={400}
+                />
+                <p><Text css={{"fontFamily": "Palatino", "textAlign": "center"}} weight={'semibold'} size={20}>{item.before}</Text></p>
+
+              </div>
+              <div>
+                <Image
+                    src={item.imageAfter}
+                    width={400}
+                    height={400}
+                />
+                <p><Text css={{"fontFamily": "Palatino", "textAlign": "center"}} weight={'semibold'} size={20}>{item.after}</Text></p>
+              </div>
+              
           
             </Card.Body>
             
-            <Card.Footer css={{ justifyContent:"center", textAlign:"center", margin:"20px" }}>
+            <Card.Footer css={{ justifyContent:"center", textAlign:"center"}}>
               <Text>
-                <p><Text size={20} >{item.title}</Text></p>
-                <p><Text weight={'semibold'} size={20}>{item.before}</Text></p>
-                <p><Text weight={'semibold'} size={20}>{item.after}</Text></p>
-                <p><Text weight={'semibold'} size={20}>{item.extra}</Text></p>
+                <p><Text css={{"fontFamily": "Palatino"}} size={20} >{item.title}</Text></p>
+                
               </Text>
             </Card.Footer>
           </Card> 

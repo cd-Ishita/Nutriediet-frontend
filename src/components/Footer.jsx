@@ -44,8 +44,8 @@ const Footer = () => {
           <div style={{
             "width":"90%"
           }}>
-            <Text color="white" size={20}>1. Nutrie Diet, Near Mayabazar Restaurant, Karkhana, Hyderabad - 500015</Text>
-            <Text color="white" size={20}>2. Image Hospital, Kavuri Hills, Madhapur, Hyderabad - 500081</Text>
+            <Text color="white" size={20}>1. 1st Floor, Dr Bhupen Bakshi Hospital, Diamond Point, Sikh Village, Secunderabad, Telangana 500009</Text>
+            <Text color="white" size={20}>2. Sri Sigma Hospitals, Behind Karachi Bakery, Survey No. 64, Madhapur, Hyderabad, Telangana 500081</Text>
           </div>
         </div>
         <div style={{
@@ -59,11 +59,6 @@ const Footer = () => {
           <Link size={20} weight={"semibold"} color="white" css={{"display":"flex", "alignItems":"center", "gap":"5px"}}><FaFacebookSquare/>Facebook </Link>
           <Link size={20} weight={"semibold"} color="white" css={{"display":"flex", "alignItems":"center", "gap":"5px"}}><FaWhatsappSquare/>WhatsApp</Link>
         </div>
-      </Row>
-      <Row css={{
-        "justifyContent":"center"
-      }}>
-        <Text color="white">Made with Love, By Rithik ♥</Text>
       </Row>
     </Container>
   )

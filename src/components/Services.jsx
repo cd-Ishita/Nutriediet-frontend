@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <>
         <Grid.Container gap={2} justify="center" css={{
-            "backgroundImage": "linear-gradient(0deg, rgba(122,88,0,1) 0%, rgba(158,93,2,1) 100%);",
+            "backgroundImage": "radial-gradient(square, #c0de66 90%, #92de66 10%, white);",
             "mt":"10px",
             "mb":"10px"
         }}>
@@ -13,7 +13,7 @@ const Services = () => {
                     isPressable
                     isHoverable
                     variant="bordered"
-                    css={{ mw: "400px", "backgroundColor": "orange" }}
+                    css={{ mw: "400px", "backgroundColor": "#c0de66" }}
                     >
                     <Card.Body>
                         <Text b size={18} align="center">Weight loss</Text>
@@ -25,7 +25,7 @@ const Services = () => {
                     isPressable
                     isHoverable
                     variant="bordered"
-                    css={{ mw: "400px", "backgroundColor": "orange" }}
+                    css={{ mw: "400px", "backgroundColor": "#c0de66" }}
                     >
                     <Card.Body>
                         <Text b size={18} align="center">Diabetes</Text>
@@ -37,7 +37,7 @@ const Services = () => {
                     isPressable
                     isHoverable
                     variant="bordered"
-                    css={{ mw: "400px", "backgroundColor": "orange" }}
+                    css={{ mw: "400px", "backgroundColor": "#c0de66" }}
                     >
                     <Card.Body>
                         <Text b size={18} align="center">Hypertension</Text>
@@ -49,7 +49,7 @@ const Services = () => {
                     isPressable
                     isHoverable
                     variant="bordered"
-                    css={{ mw: "400px", "backgroundColor": "orange" }}
+                    css={{ mw: "400px", "backgroundColor": "#c0de66" }}
                     >
                     <Card.Body>
                         <Text b size={18} align="center">PCOS</Text>
@@ -61,7 +61,7 @@ const Services = () => {
                     isPressable
                     isHoverable
                     variant="bordered"
-                    css={{ mw: "400px", "backgroundColor": "orange" }}
+                    css={{ mw: "400px", "backgroundColor": "#c0de66" }}
                     >
                     <Card.Body>
                         <Text b size={18} align="center">Weight gain</Text>
@@ -73,7 +73,7 @@ const Services = () => {
                     isPressable
                     isHoverable
                     variant="bordered"
-                    css={{ mw: "400px", "backgroundColor": "orange" }}
+                    css={{ mw: "400px", "backgroundColor": "#c0de66" }}
                     >
                     <Card.Body>
                         <Text b size={18} align="center">Pediatric nutrition</Text>
@@ -85,7 +85,7 @@ const Services = () => {
                     isPressable
                     isHoverable
                     variant="bordered"
-                    css={{ mw: "400px", "backgroundColor": "orange" }}
+                    css={{ mw: "400px", "backgroundColor": "#c0de66" }}
                     >
                     <Card.Body>
                         <Text b size={18} align="center">Other issues</Text>
@@ -97,7 +97,7 @@ const Services = () => {
                     isPressable
                     isHoverable
                     variant="bordered"
-                    css={{ mw: "400px", "backgroundColor": "orange" }}
+                    css={{ mw: "400px", "backgroundColor": "#c0de66" }}
                     >
                     <Card.Body>
                         <Text b size={18} align="center">Online consultation</Text>

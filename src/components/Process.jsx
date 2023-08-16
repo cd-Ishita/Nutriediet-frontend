@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "../index.css"
 import { Container, Row, Text } from '@nextui-org/react'
 
 const Process = () => {
@@ -16,8 +16,7 @@ const Process = () => {
                 "position":"relative",
                 "marginRight":"30px"
             }}>
-                <Text weight={"semibold"} size={40}>Our Process</Text>
-                <Text weight={"normal"} size={25}>Simple and healthy diets, no medication - no side-effects</Text>
+                <Text h1 weight={"bold"} size={55} css={{"fontFamily": "My Soul, cursive", "fontWeight": "10", "fontStretch": "ultra-expanded"}}>Our Process</Text>
             </div>
             <div style={{
                 "position":"relative",
@@ -34,13 +33,13 @@ const Process = () => {
                 <div style={{
                     "maxWidth":"auto"
                 }}>
-                    <Text size={22}>• 1-on-1 detailed consultation</Text>
-                    <Text size={22}>• Nutritional assessment</Text>
-                    <Text size={22}>• Blood report analysis</Text>
-                    <Text size={22}>• Weekly diet plans</Text>
-                    <Text size={22}>• Tasty and healthy recipes</Text>
-                    <Text size={22}>• Focused exercise regimen</Text>
-                    <Text size={22}>• Weekly follow-up and quick support</Text>
+                    <Text size={22} css={{"fontFamily": "Palatino"}}>• 1-on-1 detailed consultation</Text>
+                    <Text size={22} css={{"fontFamily": "Palatino"}}>• Nutritional assessment</Text>
+                    <Text size={22} css={{"fontFamily": "Palatino"}}>• Blood report analysis</Text>
+                    <Text size={22} css={{"fontFamily": "Palatino"}}>• Weekly diet plans</Text>
+                    <Text size={22} css={{"fontFamily": "Palatino"}}>• Tasty and healthy recipes</Text>
+                    <Text size={22} css={{"fontFamily": "Palatino"}}>• Focused exercise regimen</Text>
+                    <Text size={22} css={{"fontFamily": "Palatino"}}>• Weekly follow-up and quick support</Text>
                 </div>
             </div>
         </Row>

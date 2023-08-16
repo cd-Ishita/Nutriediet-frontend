@@ -1,8 +1,23 @@
 import React from 'react'
-import { Navbar, Button, Link, Text, Container, Row } from '@nextui-org/react'
+import { Navbar, Button, Link, Text, Container, Row, styled } from '@nextui-org/react'
 
 // Static Imports
 import logo from "../assets/logon2.png"
+
+const Box = styled("div", {
+    boxSizing: "border-box",
+  });
+  
+
+const Layout = ({ children }) => (
+    <Box
+      css={{
+        maxW: "100%"
+      }}
+    >
+      {children}
+    </Box>
+  );
 
 const Navigation = () => {
 
@@ -30,7 +45,8 @@ const Navigation = () => {
   ];
 
   return (
-      <Navbar css={{
+    <Layout>
+      <Navbar isBordered variant="floating" css={{
         "background":"white"
       }}>
         <Navbar.Toggle showIn="xs"/>
@@ -40,13 +56,13 @@ const Navigation = () => {
 
         <Navbar.Content
           enableCursorHighlight
-          activeColor="warning"
+          activeColor="primary"
           hideIn="xs"
           variant="highlight"
         >
-          <Navbar.Link css={{"textDecoration":"underline"}} href="/">Home</Navbar.Link>
-          <Navbar.Link css={{"textDecoration":"underline"}} href="/progress"> Progress </Navbar.Link>
-          <Navbar.Link css={{"textDecoration":"underline"}} href="/review">Review</Navbar.Link> 
+          <Navbar.Link css={{"textDecoration":"underline", "fontFamily": "Palatino"}} href="/">Home</Navbar.Link>
+          <Navbar.Link css={{"textDecoration":"underline", "fontFamily": "Palatino"}} href="/progress"> Progress </Navbar.Link>
+          <Navbar.Link css={{"textDecoration":"underline", "fontFamily": "Palatino"}} href="/review">Review</Navbar.Link> 
         </Navbar.Content>
 
         <Navbar.Content>
@@ -78,6 +94,7 @@ const Navigation = () => {
           ))}
         </Navbar.Collapse>
       </Navbar>
+      </Layout>
   )
 }
 

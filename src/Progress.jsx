@@ -1,9 +1,16 @@
 import React from 'react'
 
-import Process from './components/Process'
+import Progress1 from './components/Progress'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+
 const Progress = () => {
   return (
-    <Process />
+    <div>
+        <Progress1 />
+        <Contact  />
+        <Footer />
+    </div>
   )
 }
 

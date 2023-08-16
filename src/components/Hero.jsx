@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Grid, Col, Text, Button} from '@nextui-org/react'
 
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -67,17 +68,18 @@ const Hero = () => {
                     "alignItems":"center",
                     "justifyContent":"center"
                 }}>
-                    <Text color="white" weight={"bold"} size={50} css={{"textAlign": "center"}}>
+                    <Text color="white" weight={"bold"} size={50} css={{"textAlign": "center", fontFamily: "Palatino"}}>
                         {text}
                     </Text>
-                    <Text color="white" weight={"normal"} size={20}>NutrieDiet, Rediscover Yourself</Text>
-                    <Button href="https://nutriediet.com/views/login.html" size="sm" animated color="warning" css={{
+                    <Text color="white" weight={"normal"} size={20} css={{"fontFamily": "Palatino"}}>Rediscover Yourself</Text>
+                    <Link to="https://nutriediet.com/views/login.html">
+                    <Button href="https://nutriediet.com/login" size="sm" animated color="warning" css={{
                         "width": "20%",
                         "justifyContent": "center",
                         "marginTop": "20px"
                     }}>
                         Join Now!
-                    </Button>
+                    </Button></Link>
                 </Row>
                 
                 
